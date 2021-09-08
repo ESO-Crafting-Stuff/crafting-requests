@@ -38,7 +38,7 @@ var COST_TYPES = [COST_RAW, COST_TRAITS, COST_STYLES,COST_ENCHANT, COST_QUALITY]
 // Sets and itemIds
 //-------------------------------------------------//
 
-var setItemIds = {
+var ALL_SET_ITEM_IDS = {
   "[No Set]": {
     "Weapon": {"Axe": "43529",  "Hammer": "43530",  "Sword": "43531",  "Two Handed Sword": "43534",  "Two Handed Axe": "43532",  "Two Handed Hammer": "43533",  "Bow": "43549",  "Healing Staff": "43560",  "Dagger": "43535",  "Fire Staff": "43557",  "Frost Staff": "43558",  "Shield": "43556",  "Lightning Staff": "43559"},
     "Armour": {
@@ -570,7 +570,7 @@ var setItemIds = {
 };
 
 // Get Set names in alphabetical order, with "[No Set]" first:
-var SET_NAMES = Object.keys(setItemIds).sort(function(s1, s2) {if (s1===NO_SET || s2===NO_SET) {return 1} else {return s1 > s2 ? 1 : -1}});
+var SET_NAMES = Object.keys(ALL_SET_ITEM_IDS).sort(function(s1, s2) {if (s1===NO_SET || s2===NO_SET) {return 1} else {return s1 > s2 ? 1 : -1}});
 
 
 //-------------------------------------------------//
@@ -886,11 +886,11 @@ ITEM_CLASS_MAP[JEWELLERY] = CRAFTABLE_JEWELLERY;
 
 
 function getItemId(itemSet, craftableItem) {
-    // setItemIds contains all the info in a nice format, but ARMOUR is keyed with weight too:
+    // ALL_SET_ITEM_IDS contains all the info in a nice format, but ARMOUR is keyed with weight too:
     if (craftableItem.type === WEAPON || craftableItem.type === JEWELLERY) {
-        return setItemIds[itemSet][craftableItem.type][craftableItem.uespName];
+        return ALL_SET_ITEM_IDS[itemSet][craftableItem.type][craftableItem.uespName];
     } else if (craftableItem.type === ARMOUR) {
-        return setItemIds[itemSet][craftableItem.type][craftableItem.weight][craftableItem.uespName];
+        return ALL_SET_ITEM_IDS[itemSet][craftableItem.type][craftableItem.weight][craftableItem.uespName];
     }
 }
 
