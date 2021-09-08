@@ -1,0 +1,199 @@
+{
+  "Trial by Fire": {
+    "Armour": {
+      "Light": {
+        "Shoulders": "69944",
+        "Legs": "69947",
+        "Feet": "69948"
+      },
+      "Medium": {
+        "Chest": "69935",
+        "Waist": "69938",
+        "Hand": "69937"
+      }
+    }
+  },
+  "Noble's Conquest": {
+    "Weapon": {
+      "Two Handed Axe": "60264",
+      "Two Handed Hammer": "60265"
+    }
+  },
+  "Dauntless Combatant": {
+    "Armour": {
+      "Medium": {
+        "Waist": "159098"
+      }
+    },
+    "Jewellery": {
+      "Ring": "159099"
+    }
+  },
+  "Twice-Born Star": {
+    "Weapon": {
+      "Two Handed Sword": "58180",
+      "Dagger": "58181"
+    }
+  },
+  "Redistributor": {
+    "Weapon": {
+      "Axe": "60611",
+      "Hammer": "60612",
+      "Sword": "60613",
+      "Two Handed Axe": "60614",
+      "Two Handed Hammer": "60615",
+      "Healing Staff": "60622",
+      "Frost Staff": "60620",
+      "Lightning Staff": "60621"
+    },
+    "Armour": {
+      "Light": {
+        "Head": "60633",
+        "Chest": "60635",
+        "Robe": "60630",
+        "Legs": "60634",
+        "Feet": "60631",
+        "Hand": "60632"
+      },
+      "Heavy": {
+        "Chest": "60623",
+        "Feet": "60624",
+        "Hand": "60625"
+      }
+    }
+  },
+  "Law of Julianos": {
+    "Armour": {
+      "Light": {
+        "Shoulders": "69594"
+      },
+      "Medium": {
+        "Head": "69584"
+      },
+      "Heavy": {
+        "Head": "69577"
+      }
+    }
+  },
+  "Mechanical Acuity": {
+    "Armour": {
+      "Medium": {
+        "Hand": "131100"
+      }
+    }
+  },
+  "Armor Master": {
+    "Weapon": {
+      "Two Handed Axe": "60964",
+      "Shield": "60995"
+    },
+    "Armour": {
+      "Light": {
+        "Head": "60983",
+        "Shoulders": "60986",
+        "Hand": "60982"
+      },
+      "Medium": {
+        "Shoulders": "60993",
+        "Waist": "60994",
+        "Legs": "60992"
+      },
+      "Heavy": {
+        "Feet": "60974"
+      }
+    }
+  },
+  "Kvatch Gladiator": {
+    "Armour": {
+      "Light": {
+        "Robe": "75406",
+        "Feet": "75407"
+      },
+      "Heavy": {
+        "Head": "75402",
+        "Shoulders": "75404",
+        "Waist": "75405",
+        "Feet": "75400"
+      }
+    }
+  },
+  "Eternal Hunt": {
+    "Armour": {
+      "Medium": {
+        "Head": "72498"
+      }
+    }
+  },
+  "Morkuldin": {
+    "Weapon": {
+      "Hammer": "70651",
+      "Sword": "70650",
+      "Two Handed Sword": "70654",
+      "Two Handed Axe": "70652",
+      "Two Handed Hammer": "70653",
+      "Bow": "70656",
+      "Dagger": "70655",
+      "Shield": "70657"
+    },
+    "Armour": {
+      "Light": {
+        "Head": "70641",
+        "Chest": "70643",
+        "Robe": "70642",
+        "Shoulders": "70644",
+        "Waist": "70646",
+        "Legs": "70647",
+        "Hand": "70645"
+      },
+      "Medium": {
+        "Head": "70634",
+        "Chest": "70635",
+        "Shoulders": "70636",
+        "Feet": "70640",
+        "Hand": "70637"
+      },
+      "Heavy": {
+        "Head": "70627",
+        "Waist": "70631",
+        "Legs": "70632",
+        "Feet": "70633",
+        "Hand": "70630"
+      }
+    }
+  },
+  "Unchained Aggressor": {
+    "Weapon": {
+      "Sword": "158692"
+    }
+  },
+  "Sload's Semblance": {
+    "Armour": {
+      "Light": {
+        "Feet": "136088",
+        "Hand": "136089"
+      },
+      "Medium": {
+        "Head": "136098",
+        "Shoulders": "136100",
+        "Legs": "136099"
+      }
+    }
+  },
+  "Eyes of Mara": {
+    "Armour": {
+      "Light": {
+        "Feet": "53391"
+      },
+      "Heavy": {
+        "Waist": "53390"
+      }
+    }
+  },
+  "Tava's Favor": {
+    "Armour": {
+      "Heavy": {
+        "Hand": "71794"
+      }
+    }
+  }
+}

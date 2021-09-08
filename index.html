@@ -1,0 +1,119 @@
+<html>
+<head>
+    <title>ESO Item Crafting Requests</title>
+    <link href="eso_crafting.css" rel="stylesheet">
+    <script src="eso_crafting.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body onload="initialise()">
+<div class="table-wrapper">
+
+<h1>ESO Item Crafting Requests</h1>
+
+<h2>Items requested:</h2>
+<table id="eso_crafting_table">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Item</th>
+        <th>Level</th>
+        <th>Style</th>
+        <th>Trait</th>
+        <th>Enchantment</th>
+        <th>Improvement</th>
+        <th>Set</th>
+        <th><span class="sr-only">Remove Row Buttons</span></th>
+    </tr>
+</thead>
+<tbody>
+    <tr id="template_row">
+        <!-- This row is hidden, excluded from calculations and just cloned as needed! -->
+        <td><select class="item-class"></select></td>
+        <td><select class="item-type"></select></td>
+        <td><select class="item-level"></select></td>
+        <td><select class="item-style"></select></td>
+        <td><select class="item-trait"></select></td>
+        <td><select class="item-enchant"></select></td>
+        <td><select class="item-quality" ></select></td>
+        <td><select class="item-set"></select></td>
+        <td><button class="remove-row-button" title="Remove row">x</button></td>
+    </tr>
+</tbody>
+<tfoot>
+    <tr class="add-row">
+        <td colspan="9"><button id="add_row" title="Add new row">+</button></td>
+    </tr>
+</tfoot>
+</table>
+
+<h2>Material requirements:</h2>
+<table id="cost_output_table">
+<thead>
+    <tr>
+        <th colspan="5">Material Cost</th>
+    </tr>
+    <tr>
+        <th>Raw materials</th>
+        <th>Style materials</th>
+        <th>Trait materials</th>
+        <th>Enchanting materials</th>
+        <th>Improvement materials</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>
+            <textarea id="cost_raw_mats" readonly rows="6"></textarea>
+        </td>
+        <td>
+            <textarea id="cost_style_mats" readonly rows="6"></textarea>
+        </td>
+        <td>
+            <textarea id="cost_trait_mats" readonly rows="6"></textarea>
+        </td>
+        <td>
+            <textarea id="cost_enchant_mats" readonly rows="6"></textarea>
+        </td>
+        <td>
+            <textarea id="cost_quality_mats" readonly rows="6"></textarea>
+        </td>
+    </tr>
+</tbody>
+</table>
+
+<h2>Item links:</h2>
+<table id="item_link_table">
+<thead>
+    <tr>
+        <th>Item Request Text</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>
+            <p>Paste this text with item links into a message in ESO for a crafter to quickly use with
+            <a href="https://www.esoui.com/downloads/info1697-DolgubonsLazySetCrafter.html" rel="nofollow noopener" target="_blank">Dolgubon's Lazy Set Crafter addon</a>.
+            </p>
+            <textarea id="item_link_output" readonly rows="10"></textarea>
+        </td>
+    </tr>
+</tbody>
+</table>
+
+<small>
+<h2>Notes for advanced users</h2>
+
+<ul>
+    <li>Enchantments will default to the same quality as the item, at the highest enchanting level below the item level.</li>
+    <li>The Item IDs used in the Item Links were collected from <a href="https://esoitem.uesp.net/viewlog.php" rel="nofollow noopener" target="_blank">UESP Mined Items collection</a>
+    and have not all been tested manually. Please check what is queued is correct before crafting valuable items.</li>
+    <li>When using Item Links, <b>[Any Style]</b> will default to Breton (Molybdenum) since it is the first style selected when at a crafting station.</li>
+    <li>Previewing the item links in-game will show the item as Transmuted to the desired trait. Dolgubon's Lazy Set Crafter will make the item with the intended trait as the base-trait correctly,
+    but using the transute trait field in the item links greatly reduces the number of item IDs needed for this page to work.</li>
+</ul>
+
+</small>
+</div>
+
+</body>
+</html>

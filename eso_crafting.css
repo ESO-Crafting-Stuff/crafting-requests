@@ -1,0 +1,73 @@
+body {
+  font-family: monospace;
+}
+
+@media (min-width: 1400px) {
+  .table-wrapper {
+      max-width: 80%;
+  }
+}
+
+td,th {
+    border: 1px solid #aaa;
+    padding: 5px;
+    text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+th {
+    background-color: #333;
+    border: 1px solid #666;
+    color: #fff;
+}
+
+table {
+    border-collapse: collapse;
+    font-family: monospace;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.table-wrapper {
+  margin: auto;
+}
+
+textarea {
+  width: 100%;
+  padding: 1ex;
+  user-select: all;
+}
+
+select {
+  padding: 0.2em;
+  width: 100%;
+}
+
+#template_row {
+  display: none;
+}
+
+.sr-only {
+  /* For screen-reader viewers only */
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+.remove-row-button {
+  font-size: 0.6rem;
+}
+.add-row td {
+  padding: 6px;
+}
